@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="1dp"
+    tools:context="com.it.nhozip.docbao.MainActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:minHeight="?attr/actionBarSize" >
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_marginTop="59dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_swipe">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+        </FrameLayout>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#3ea4df"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/white"
+            android:dividerHeight="1dp" />
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_addButtonSize="normal"
+        fab:fab_addButtonColorNormal="#36c5ea"
+        fab:fab_addButtonColorPressed="#f11e6c"
+        fab:fab_addButtonPlusIconColor="#f1f2e6"
+        fab:fab_labelStyle="@style/menu_labels_style">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fAbTienPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#36c5ea"
+            fab:fab_title="Tiền Phong"
+            fab:fab_colorPressed="#f11e6c"
+            fab:fab_icon="@drawable/tienphong"
+            android:onClick="onClickPAB" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fAbVietNamNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#36c5ea"
+            fab:fab_title="VietNamNet"
+            fab:fab_colorPressed="#f11e6c"
+            fab:fab_icon="@drawable/vietnamnet"
+            android:onClick="onClickPAB" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fAbNgoiSAo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#36c5ea"
+            fab:fab_title="Ngôi Sao"
+            fab:fab_colorPressed="#f11e6c"
+            fab:fab_icon="@drawable/ngoisao"
+            android:onClick="onClickPAB" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fAbVnExpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#36c5ea"
+            fab:fab_title="VnExpress"
+            fab:fab_colorPressed="#f11e6c"
+            fab:fab_icon="@drawable/vn_express"
+            android:onClick="onClickPAB" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+</RelativeLayout>
