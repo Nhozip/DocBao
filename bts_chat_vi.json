@@ -14,9 +14,9 @@
     "fb_banner": "",
     "fb_inter": ""
   },
-  "isExit": true,
+  "isExit": false,
   "showMoreApp": false,
-  "idNew": "",
+  "idNew": "com.btscall.btsvideocall.BTSMessenger3",
   "app_exists": {
     "id": "com.king.candycrushsaga",
     "is_exists": true,
