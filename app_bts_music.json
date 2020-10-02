@@ -1,0 +1,27 @@
+{
+  "ads": {
+    "id_app": "",
+    "banner_setting": "",
+    "inter_setting": "",
+    "banner_main": "",
+    "inter_main": "",
+
+    "banner_setting_new": "",
+    "inter_setting_new": "",
+    "banner_main_new": "",
+    "inter_main_new": "",
+    "onlyAdmod": false,
+    "onlyFB": true,
+    "fb_banner": "",
+    "fb_inter": ""
+  },
+  "isExit": true,
+  "showMoreApp": false,
+  "idNew": "",
+  "app_exists": {
+    "id": "com.king.candycrushsaga",
+    "is_exists": true,
+    "is_show_more": true
+  },
+  "apps": []
+}
