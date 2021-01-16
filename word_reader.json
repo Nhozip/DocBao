@@ -23,8 +23,8 @@
     "is_exists": true,
     "is_show_more": true,
     "isLoading": false,
-    "isShowAds": true,
-    "onlyAdsMe": true,
+    "isShowAds": false,
+    "onlyAdsMe": false,
     "bg": "https://play-lh.googleusercontent.com/8gaz8rbPJ7hCtl-kU1mQwm04-awVv5TDSJjEfmEKRDp1hipKn2nlRmLKEmSDib7uqCk=w1440-h620-rw"
   },
   "apps": [
